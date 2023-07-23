@@ -1,11 +1,14 @@
 const express = require('express');
-const connectDB = require('./config/db');
+const mongoose = require('mongoose');
+const dotenv = require('dotenv');
 const path = require('path');
+dotenv.config();
 const app = express();
 
 
+
 app.use(express.json({ extended: false }));
-connectDB();
+mongoose.connect(process.env.MONGODB_URI);
 
 app.use('/users', require('./routes/users'));
 app.use('/auth', require('./routes/auth'));
