@@ -23,12 +23,9 @@
 ## Run app on your local machine:
 - Clone the repository 
     ```bash
-    git clone https://github.com/SarvjeetGit/DevConnector.git
+    git clone https://github.com/singhmuk/user-managment.git
     ```
 - Open the project in your favorite editor 
-    ```bash
-    cd DevConnector/ 
-    ```
 - Install the dependencies on Server Side as well as client side
     ```bash
     npm i
